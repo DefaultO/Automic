@@ -1,5 +1,5 @@
 # Not yet cleaned Automic
-Android Internal Automic Source Code - Made by iProgramInCpp, playingo.
+The original project was made by iProgramInCpp & [Playingo](https://github.com/playingoDEERUX).
 
 - They dont care about credits. They just dont want to see videos like Kryptonware who make use of their work for money. So he leaked this again.
 
