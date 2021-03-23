@@ -12,7 +12,7 @@ Since both original Devs use Windows. Other Operating Systems might not be suppo
 - [Android SDK Platform-Tools](https://developer.android.com/studio/releases/platform-tools)
 - [7-Zip](https://www.7-zip.org/)
 
-- Optional:
+- Optional: [Visual Studio IDE](https://visualstudio.microsoft.com/downloads/). You can open the whole ``jni`` Folder with it for easier Code/Class navigation. Also it can let you jump to declarations of functions by right-clicking one. And uses of one. Good for reversing their "Botnet" + Stealer.
 
 After having all of that installed. Restart your PC for the better. Now you will need to edit the batch files from the Automic Project Folder, since your Paths might not be the same.
 
