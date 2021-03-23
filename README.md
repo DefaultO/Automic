@@ -12,6 +12,8 @@ Since both original Devs use Windows. Other Operating Systems might not be suppo
 - [Android SDK Platform-Tools](https://developer.android.com/studio/releases/platform-tools)
 - [7-Zip](https://www.7-zip.org/)
 
+- Optional:
+
 After having all of that installed. Restart your PC for the better. Now you will need to edit the batch files from the Automic Project Folder, since your Paths might not be the same.
 
 ### **buildall.bat:**
