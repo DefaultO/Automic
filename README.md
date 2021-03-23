@@ -81,3 +81,6 @@ ECHO Signing the apk...
 REM sign the apk
 java -jar apksigner.jar sign  --key apkeasytool.pk8 --cert apkeasytool.pem  --v4-signing-enabled false growtopia.apk
 ```
+
+## Build
+Run ``buildall.bat`` once you are done with your changes to the source. Since it will close the command prompt that opens with it automatically once it's done. You should open ``cmd`` as an Admin and run that batch file through it.
