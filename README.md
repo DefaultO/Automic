@@ -34,3 +34,17 @@ NDK_PROJECT_PATH=\
 NDK_APPLICATION_MK=\jni\Application.mk
 cmd /k
 ```
+
+### **install.bat**
+
+
+Same here. Edit all paths. Even though I don't know why it has to be included here. Optional: Remove the ``REM`` in front of ``adb uninstall com.rtsoft.growtopia``. This will uncomment that line. And will cause Growtopia to get uninstalled every build. Which is quite useful when you have builds that just won't work or you find small things that you have to edit. It won't be able to install/update the android package when you have one with the same name already installed.
+```batch
+@ECHO OFF
+SET PATH=%PATH%;C:\Program Files\7-Zip;D:\android-ndk-r16b;D:\platform-tools
+ECHO Installing on default phone...
+REM adb uninstall com.rtsoft.growtopia
+adb install growtopia.apk
+
+ECHO Done, spawning logcat...
+adb logcat -s "INfERNAL"```
