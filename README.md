@@ -47,4 +47,34 @@ REM adb uninstall com.rtsoft.growtopia
 adb install growtopia.apk
 
 ECHO Done, spawning logcat...
-adb logcat -s "INfERNAL"```
+adb logcat -s "INfERNAL"
+```
+
+### **PackageApk**
+
+This is something I couldn't manage to work. It won't place the library into Growtopia's APK Lib Folder on it's own. You will probably have to replace ``libblue.so`` to ``libinfernal.so``. I don't know, they had a private version or this source is super old.
+
+Also create a new Folder in the Source Folder (where all those batches are) called ``gt``. In this Folder you put the original ``growtopia.apk``, since it gets deleted, don't download it to this folder, but always copy-paste it into that folder. You will probably need the one for 3.59, not sure what version the sigs are there for.
+
+```batch
+@ECHO OFF
+
+SET PATH=%PATH%;C:\Program Files\7-Zip;D:\android-ndk-r16b;D:\platform-tools
+ECHO Copying library...
+REM Copy the so file from libs/armeabi-v7a to gt's lib dir
+COPY libs\armeabi-v7a\libinfernal.so gt\lib\armeabi-v7a\libinfernal.so
+
+ECHO Packaging the library...
+REM delete the original apk
+DEL growtopia.apk
+
+REM package the apk itself
+CD gt
+7Z a -tzip growtopia.apk *
+CD ..
+MOVE gt\growtopia.apk growtopia.apk
+
+ECHO Signing the apk...
+REM sign the apk
+java -jar apksigner.jar sign  --key apkeasytool.pk8 --cert apkeasytool.pem  --v4-signing-enabled false growtopia.apk
+```
