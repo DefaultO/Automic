@@ -53,7 +53,7 @@ ECHO Done, spawning logcat...
 adb logcat -s "INfERNAL"
 ```
 
-### **PackageApk**
+### **PackageApk.bat**
 
 This is something I couldn't manage to work. It won't place the library into Growtopia's APK Lib Folder on it's own. You also will probably have to replace ``libblue.so`` with ``libinfernal.so``. I don't know, they had a private version or this source is super old.
 
@@ -85,4 +85,9 @@ java -jar apksigner.jar sign  --key apkeasytool.pk8 --cert apkeasytool.pem  --v4
 ## Build
 Run ``buildall.bat`` once you are done with your changes to the source. Since it will close the command prompt that opens with it automatically once it's done. You should open ``cmd`` as an Admin and run that batch file through it.
 
-I am working on cleaning the source and making it skid-ready. Also I will include my current solution once it's buildable on it's own. The Function ``isLibraryLoaded`` wasn't present in the source. So you had to decide if you want comment the whole sleeping loop out. Or if you recreate the function. Since I thought it's not there without any reason, I decided myself to recreate that function. The library would build fine.
+I am working on cleaning the source and making it skid-ready. Also I will include my current solution for the ``PackageApk.bat`` problem once it's buildable on it's own and stealer-free. The Function ``isLibraryLoaded`` wasn't present in the source. So you had to decide if you want to comment out the whole sleeping loop. Or if you recreate the function. Since I thought it's not there without any reason, I decided myself to recreate that function. The library would build fine.
+
+But I was told iProgramMcVirgin at some point announced next to the leak that you had to remove a huge part of ``eNetClient2.cpp``. Currently reversing what is supposed to be wrong there. As by removing all that 'SendPacket' Stuff, you break the Multibotting feature as well as the Autofarmer itself. Maybe it's a try by him to stop skids from using it and rebranding it under some "Project [...]" or "[...]ware".
+
+Quote @iProgramMC:
+> @everyone Please enjoy. To remove stealer, you will need to remove everything inside enetclient2.cpp, as well as remove the lines that error out once you do that. Enjoy!!! Also, don't release this as your own project without asking permission
