@@ -54,7 +54,7 @@ adb logcat -s "INfERNAL"
 
 This is something I couldn't manage to work. It won't place the library into Growtopia's APK Lib Folder on it's own. You will probably have to replace ``libblue.so`` to ``libinfernal.so``. I don't know, they had a private version or this source is super old.
 
-Also create a new Folder in the Source Folder (where all those batches are) called ``gt``. In this Folder you put the original ``growtopia.apk``, since it gets deleted, don't download it to this folder, but always copy-paste it into that folder. You will probably need the one for 3.59, not sure what version the sigs are there for.
+Also create a new Folder in the Source Folder (where all those batches are) called ``gt``. In this Folder you put the original ``growtopia.apk``, since it gets deleted, don't download it to this folder, but always copy-paste it into that folder. Or edit the batch script so it does a copy of it on it's own. You will probably need the one for 3.59, not sure what version the sigs are there for.
 
 ```batch
 @ECHO OFF
