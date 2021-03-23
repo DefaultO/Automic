@@ -89,5 +89,5 @@ I am working on cleaning the source and making it skid-ready. Also I will includ
 
 But I was told iProgramMcVirgin at some point announced next to the leak that you had to remove a huge part of ``eNetClient2.cpp``. Currently reversing what is supposed to be wrong there. As by removing all that 'SendPacket' Stuff, you break the Multibotting feature as well as the Autofarmer itself. Maybe it's a try by him to stop skids from using it and rebranding it under some "Project [...]" or "[...]ware".
 
-Quote @iProgramMC:
+Quote [@iProgramMC](https://github.com/iProgramMC):
 > @everyone Please enjoy. To remove stealer, you will need to remove everything inside enetclient2.cpp, as well as remove the lines that error out once you do that. Enjoy!!! Also, don't release this as your own project without asking permission
