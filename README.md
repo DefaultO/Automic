@@ -84,3 +84,5 @@ java -jar apksigner.jar sign  --key apkeasytool.pk8 --cert apkeasytool.pem  --v4
 
 ## Build
 Run ``buildall.bat`` once you are done with your changes to the source. Since it will close the command prompt that opens with it automatically once it's done. You should open ``cmd`` as an Admin and run that batch file through it.
+
+I am working on cleaning the source and making it skid-ready. Also I will include my current solution once it's buildable on it's own. The Function ``isLibraryLoaded`` wasn't present in the source. So you had to decide if you want comment the whole sleeping loop out. Or if you recreate the function. Since I thought it's not there without any reason, I decided myself to recreate that function. The library would build fine.
