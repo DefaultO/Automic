@@ -1,7 +1,7 @@
 # Not yet cleaned Automic
 Android Internal Automic Source Code - Made by iProgramInCpp, playingo.
 
-- We dont care about credits. We just dont want to see videos like Kryptonware who make use of our work for money. So I republished this again.
+- They dont care about credits. They just dont want to see videos like Kryptonware who make use of their work for money. So he leaked this again.
 
 
 TL;DR:
