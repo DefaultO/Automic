@@ -4,6 +4,7 @@ The original project was made by [iProgramInCpp](https://github.com/iProgramMC) 
 This project makes use of letting the game load their own library. I have never seen Dear Imgui getting used for Android Mod Menus before, which why I was interested in stuff like Exafarm and Automic the whole time. Guess, because of them, we will see menus like this pop up for not only Growtopia pretty soon, but also other mobile phone games. Credits to that.
 
 ## Prerequisites
+Since both original Devs use Windows. Other Operating Systems might not be supported.
 - [Java Runtime](https://java.com/en/download/)
 - [Android NDK](https://dl.google.com/android/repository/android-ndk-r16b-windows-x86_64.zip)
 - [Android SDK Platform-Tools](https://developer.android.com/studio/releases/platform-tools)
