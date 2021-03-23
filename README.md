@@ -14,7 +14,7 @@ After having all of that installed. Restart your PC for the better. Now you will
 
 ### **buildall.bat:**
 
-Change ``C:\Program Files\7-Zip`` to where you have installed 7-Zip. This is the default path. If you haven't changed the directory in the Setup, you can leave it like that. Change ``D:\android-ndk-r16b;`` to where you have extracted **Android NDK** to.
+Change ``C:\Program Files\7-Zip`` to where you have installed **7-Zip**. This is the default path. If you haven't changed the directory in the Setup, you can leave it like that. Change ``D:\android-ndk-r16b`` to where you have extracted **Android NDK** to.
 ```batch
 @ECHO OFF
 SET PATH=%PATH%;C:\Program Files\7-Zip;D:\android-ndk-r16b;
